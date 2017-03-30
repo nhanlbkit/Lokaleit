@@ -7,9 +7,9 @@
 	<ContentPage.Content>
 		<Grid>
 		<Grid.RowDefinitions>
-				<RowDefinition></RowDefinition>
-				<RowDefinition></RowDefinition>
-				<RowDefinition></RowDefinition>
+				<RowDefinition Height="Auto"></RowDefinition>
+				<RowDefinition Height="*"></RowDefinition>
+
 			</Grid.RowDefinitions>
 		<StackLayout>
 
@@ -18,14 +18,17 @@
 				</StackLayout>
 		<StackLayout Grid.Row="1" Spacing="20" VerticalOptions="CenterAndExpand" Margin="20,0">
 
-			<controls:IconEntry ImageSource="firma_aktiv.png" Placeholder="FIRMANAVN"></controls:IconEntry>
-			<controls:IconEntry ImageSource="cvr_aktiv.png" Placeholder="CVR"></controls:IconEntry>
-			<controls:IconEntry ImageSource="kontaktperson_aktiv.png" Placeholder="KONTAKTPERSON"></controls:IconEntry>
-			<controls:IconEntry ImageSource="mail_aktiv.png" Placeholder="EMAIL"></controls:IconEntry>
-			<controls:IconEntry ImageSource="telefon_aktiv.png" Placeholder="TELEFON"></controls:IconEntry>
+			<controls:IconEntry ImageSource="firma_aktiv.png" Placeholder="NAVN"></controls:IconEntry>
+			<controls:IconEntry ImageSource="cvr_aktiv.png" Placeholder="EFTERNAVN"></controls:IconEntry>
+			<StackLayout Orientation="Vertical">
+					<Label>KØN</Label>
+				</StackLayout>
+			<controls:IconEntry ImageSource="mail_aktiv.png" Placeholder="ÅRGANG"></controls:IconEntry>
+			<controls:IconEntry ImageSource="telefon_aktiv.png" Placeholder="TLF"></controls:IconEntry>
+				<controls:IconEntry ImageSource="telefon_aktiv.png" Placeholder="EMAIL"></controls:IconEntry>
 			<controls:IconEntry ImageSource="adgangskode_aktiv.png" Placeholder="ADGANGSKODE" IsPassword="true" ></controls:IconEntry>
 		   <Button Style="{StaticResource btnLokale}"  VerticalOptions="CenterAndExpand"  Text="OPRET" ></Button>
-			<Button Text="Dissmiss" TextColor="White" VerticalOptions="CenterAndExpand"  Clicked="btnDissmiss" ></Button>
+			<Button Style="{StaticResource btnLokale}" Text="Dissmiss" TextColor="White" VerticalOptions="CenterAndExpand"  Clicked="btnDissmiss" ></Button>
 		</StackLayout>
 
 			</Grid>

@@ -13,7 +13,7 @@ namespace Lokaleit
 		}
 		void btnDissmiss(object sender, System.EventArgs e)
 		{
-			this.Navigation.PopModalAsync(true);
+			this.Navigation.PopModalAsync();
 		}
 	}
 }

@@ -10,15 +10,19 @@ namespace Lokaleit
 		public Home()
 		{
 			InitializeComponent();
-			CarouselViewControlLoad();
+			//CarouselViewControlLoad();
 		}
 		protected override void OnAppearing()
 		{
-			
-			//if (!App.MainView.IsLogged)
-			//{
-			//	this.Navigation.PushModalAsync(new Opret());
-			//}
+
+			if (!App.MainView.IsLogged)
+			{
+				App.Current.MainPage.Navigation.PushModalAsync(new Opret());
+			}
+			else
+			{
+				CarouselViewControlLoad();
+			}
 			base.OnAppearing();
 		}
 		public void CarouselViewControlLoad()

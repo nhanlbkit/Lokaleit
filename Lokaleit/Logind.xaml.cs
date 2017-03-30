@@ -9,7 +9,7 @@ namespace Lokaleit
 	{
 		void Handle_Clicked(object sender, System.EventArgs e)
 		{
-			this.Navigation.PopModalAsync();
+			App.Current.MainPage.Navigation.PopModalAsync();
 		}
 
 		public Logind()

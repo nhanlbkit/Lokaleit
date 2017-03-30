@@ -6,6 +6,7 @@ namespace Lokaleit
 	{
 		async void btnOpretPrivat(object sender, System.EventArgs e)
 		{
+			this.Navigation.PopModalAsync();
 			await	App.Current.MainPage.Navigation.PushModalAsync(new UdfyldOpret());
 		}
 
@@ -16,14 +17,15 @@ namespace Lokaleit
 
 		void Handle_Clicked(object sender, System.EventArgs e)
 		{
-			this.Navigation.PushModalAsync(new Logind());
+			this.Navigation.PopModalAsync();
+			 App.Current.MainPage.Navigation.PushModalAsync(new Logind());
 
 		}
 
 		void btnOpretErhvers(object sender, System.EventArgs e)
 		{
-			//this.Navigation.InsertPageBefore(this, new UdfyldOpret());
-			this.Navigation.PushModalAsync(new UdfyldOpret());
+			this.Navigation.PopModalAsync();
+			 App.Current.MainPage.Navigation.PushModalAsync(new UdfyldOpret());
 		}
 	}
 }

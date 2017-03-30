@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:controls="clr-namespace:Lokaleit;assembly=Lokaleit"
+	xmlns:extends="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+	xmlns:effects="clr-namespace:Lokaleit;assembly=Lokaleit" x:Class="Lokaleit.Home" BackgroundColor="#32384c">
+	<ContentPage.Content>
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="*" />
+				<RowDefinition Height="2" />
+				<RowDefinition Height="49" />
+			</Grid.RowDefinitions>
+			<StackLayout>
+				<Image HeightRequest="48" Source="logotype_w1024.png" Margin="20,10">
+				</Image>
+				<BoxView HeightRequest="2" BackgroundColor="White">
+				</BoxView>
+			</StackLayout>
+	<extends:CarouselViewControl x:Name="lokaleCarousel" Margin="20,0"
+                                      Grid.Row="1"
+                                    
+                                      HorizontalOptions="FillAndExpand"
+                                      VerticalOptions="FillAndExpand"
+                                      AnimateTransition="true"
+                                      IndicatorsShape="Circle"
+                                      InterPageSpacing="0"
+                                      InterPageSpacingColor="Transparent"
+                                     
+                                      Orientation="Horizontal"
+                                      Position="0"
+                                      ShowIndicators="true" />
+			
+			<BoxView Grid.Row="2" HeightRequest="2" BackgroundColor="White">
+			</BoxView>
+			<StackLayout Grid.Row="3" VerticalOptions="CenterAndExpand">
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition>
+						</ColumnDefinition>
+						<ColumnDefinition>
+						</ColumnDefinition>
+						<ColumnDefinition>
+						</ColumnDefinition>
+						<ColumnDefinition>
+						</ColumnDefinition>
+						<ColumnDefinition>
+						</ColumnDefinition>
+					</Grid.ColumnDefinitions>
+					<controls:ToggleButton Grid.Column="0" HeightRequest="25" CheckedImage="hjem_aktiv.png" UnCheckedImage="hjem_inaktiv.png">
+					</controls:ToggleButton>
+					<controls:ToggleButton Grid.Column="1" HeightRequest="25" CheckedImage="soeg_aktiv.png" UnCheckedImage="soeg_inaktiv.png">
+					</controls:ToggleButton>
+					<controls:ToggleButton Grid.Column="2" HeightRequest="25" CheckedImage="nyheder_aktiv.png" UnCheckedImage="nyheder_inaktiv.png">
+					</controls:ToggleButton>
+					<controls:ToggleButton Grid.Column="3" HeightRequest="25" CheckedImage="foretrukne_aktiv.png" UnCheckedImage="foretrukne_inaktiv.png">
+					</controls:ToggleButton>
+					<controls:ToggleButton Grid.Column="4" HeightRequest="25" CheckedImage="profil_aktiv.png" UnCheckedImage="profil_inaktiv.png">
+					</controls:ToggleButton>
+				</Grid>
+			</StackLayout>
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>

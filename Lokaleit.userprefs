@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{61D4ABD2-E894-46D8-8A13-10E115BEA20A}|Default">
+  <MonoDevelop.Ide.ItemProperties.Lokaleit.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.CB226FE0-ECB8-46DF-9D2A-3F83EDF33BA3" />
+  <MonoDevelop.Ide.ItemProperties.Lokaleit.Droid PreferredExecutionTarget="Android.Xamarin_Android_API_15" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="Lokaleit/Home.xaml.cs" Line="26" Column="58" />
+      <File FileName="Lokaleit/Views/CarouselTemplateSelector.cs" Line="10" Column="45" />
+      <File FileName="Lokaleit/App.xaml.cs" Line="25" Column="4" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Lokaleit" expanded="True">
+            <Node name="Lokaleit" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Bussines.xaml" selected="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+              <Node name="PrivatOpret.xaml" expanded="True" />
+              <Node name="UdfyldOpret.xaml" expanded="True" />
+            </Node>
+            <Node name="Lokaleit.Droid" expanded="True">
+              <Node name="Assets" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="values" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Lokaleit.iOS" expanded="True">
+              <Node name="Resources" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

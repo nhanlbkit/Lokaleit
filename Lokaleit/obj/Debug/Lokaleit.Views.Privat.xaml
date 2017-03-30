@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:controls="clr-namespace:Lokaleit;assembly=Lokaleit"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="Lokaleit.Privat">
+	<ContentView.Content>
+		<StackLayout   >
+				<Label TextColor="White" HorizontalOptions="CenterAndExpand" Text="PRIVAT">
+				</Label>
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition  />
+
+						<RowDefinition  />
+
+						<RowDefinition />
+					</Grid.RowDefinitions>
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition>
+							</ColumnDefinition>
+							<ColumnDefinition Width="1">
+							</ColumnDefinition>
+							<ColumnDefinition>
+							</ColumnDefinition>
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+						<RowDefinition Height="*" />
+						<RowDefinition Height="1" />
+						</Grid.RowDefinitions>
+						<controls:ImageButton ImageSource="barnedaab_aktiv.png" Text="BARNEDÅB" Orientation="Vertical" 
+							HorizontalOptions="Center" VerticalOptions="Center" Spacing="15">
+						</controls:ImageButton>
+						<BoxView  Margin="0" WidthRequest="1" BackgroundColor="White" Grid.Column="1">
+						</BoxView>
+						<controls:ImageButton Grid.Column="2" ImageSource="bryllup_aktiv.png" 
+							Text="BRYLLUP" FontAtrributes="Italic" Padding="10"
+							Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Spacing="15">
+						</controls:ImageButton>
+					<BoxView Margin="0" HeightRequest="1" BackgroundColor="White" Grid.Row="1" Grid.ColumnSpan="3">
+						
+					</BoxView>
+					</Grid>
+
+					<Grid Grid.Row="1">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition>
+							</ColumnDefinition>
+							<ColumnDefinition Width="1">
+							</ColumnDefinition>
+							<ColumnDefinition>
+							</ColumnDefinition>
+						</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="*" />
+						<RowDefinition Height="1" />
+						</Grid.RowDefinitions>
+						<controls:ImageButton ImageSource="fest_aktiv.png" Text="FES"
+						Orientation="Vertical" 
+						VerticalOptions="Center"
+						Spacing ="15"
+						HorizontalOptions="CenterAndExpand">
+						</controls:ImageButton>
+						<BoxView WidthRequest="1" BackgroundColor="White" Grid.Column="1">
+						</BoxView>
+						<controls:ImageButton Grid.Column="2" ImageSource="foedselsdag_aktiv.png" Text="FØDSELSDAG" 
+						Orientation="Vertical" 
+						VerticalOptions="Center"
+						HorizontalOptions="Center"
+						Spacing ="15">
+						</controls:ImageButton>
+					<BoxView HeightRequest="1" BackgroundColor="White" Grid.Row="1" Grid.ColumnSpan="3">
+						
+					</BoxView>
+					</Grid>
+
+					<Grid Grid.Row="2">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition>
+							</ColumnDefinition>
+							<ColumnDefinition Width="1">
+							</ColumnDefinition>
+							<ColumnDefinition>
+							</ColumnDefinition>
+						</Grid.ColumnDefinitions>
+						<controls:ImageButton ImageSource="reception_aktiv.png" Text="RECEPTION" Orientation="Vertical"
+						HorizontalOptions="Center" VerticalOptions="Center" Spacing="15">
+						</controls:ImageButton>
+						<BoxView WidthRequest="1" BackgroundColor="White" Grid.Column="1">
+						</BoxView>
+						<controls:ImageButton Grid.Column="2" ImageSource="konfirmation_aktiv.png" Text="KONFIRMATION"  
+						Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Spacing="15">
+						</controls:ImageButton>
+					</Grid>
+				</Grid>
+			</StackLayout>
+	</ContentView.Content>
+</ContentView>

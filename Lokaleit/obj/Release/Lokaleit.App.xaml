@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Lokaleit.App">
+	<Application.Resources>
+<ResourceDictionary>
+        <Color x:Key="BackgroundButton">#616571</Color>
+        <Color x:Key="NormalTextColor">White</Color>
+        <Style x:Key="btnLokale" TargetType="Button">
+            <Setter Property="BorderRadius" Value="0" />
+            <Setter Property="BackgroundColor" Value="{StaticResource BackgroundButton}"  />
+            <Setter Property="TextColor" Value="{StaticResource NormalTextColor}" />
+        </Style>
+    </ResourceDictionary>
+	</Application.Resources>
+</Application>

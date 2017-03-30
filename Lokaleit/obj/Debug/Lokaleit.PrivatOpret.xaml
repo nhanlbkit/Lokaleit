@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	 xmlns:controls="clr-namespace:Lokaleit;assembly=Lokaleit"
+	x:Class="Lokaleit.PrivatOpret">
+
+	<ContentPage.Content>
+		<Grid>
+		<Grid.RowDefinitions>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+			</Grid.RowDefinitions>
+		<StackLayout>
+
+	<Image HeightRequest="48" Source="LocateitLogoWhite.png" Margin="20,10"></Image>
+	<BoxView HeightRequest="1" BackgroundColor="White"></BoxView>
+				</StackLayout>
+		<StackLayout Grid.Row="1" Spacing="20" VerticalOptions="CenterAndExpand" Margin="20,0">
+
+			<controls:IconEntry ImageSource="firma_aktiv.png" Placeholder="FIRMANAVN"></controls:IconEntry>
+			<controls:IconEntry ImageSource="cvr_aktiv.png" Placeholder="CVR"></controls:IconEntry>
+			<controls:IconEntry ImageSource="kontaktperson_aktiv.png" Placeholder="KONTAKTPERSON"></controls:IconEntry>
+			<controls:IconEntry ImageSource="mail_aktiv.png" Placeholder="EMAIL"></controls:IconEntry>
+			<controls:IconEntry ImageSource="telefon_aktiv.png" Placeholder="TELEFON"></controls:IconEntry>
+			<controls:IconEntry ImageSource="adgangskode_aktiv.png" Placeholder="ADGANGSKODE" IsPassword="true" ></controls:IconEntry>
+		   <Button Style="{StaticResource btnLokale}"  VerticalOptions="CenterAndExpand"  Text="OPRET" ></Button>
+			<Button Text="Dissmiss" TextColor="White" VerticalOptions="CenterAndExpand"  Clicked="btnDissmiss" ></Button>
+		</StackLayout>
+
+			</Grid>
+	</ContentPage.Content>
+</ContentPage>
